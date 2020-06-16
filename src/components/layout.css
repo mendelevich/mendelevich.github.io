@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Aldrich&display=swap");
+
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -7,7 +9,6 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #f7dcf9;
 }
 article,
 aside,
@@ -201,7 +202,7 @@ html {
 }
 body {
   color: hsla(0, 0%, 0%, 0.8);
-  font-family: georgia, serif;
+  font-family: "Aldrich", Courier, monospace;
   font-weight: normal;
   word-wrap: break-word;
   font-kerning: normal;
@@ -231,8 +232,7 @@ h1 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: "Aldrich", "Courier New", Courier, monospace;
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 2.25rem;
@@ -620,4 +620,49 @@ pre tt:after {
   html {
     font-size: 100%;
   }
+}
+
+.headerText {
+  -webkit-text-stroke: 0.5px #777;
+}
+
+.frame-border {
+  /* transition: all .3s cubic-bezier(.23,1,.32,1); */
+  position: fixed;
+  background: #ccc;
+  z-index: 10000;
+}
+
+.frame-border-top,
+.frame-border-bottom {
+  height: 20px;
+}
+
+.frame-border-top {
+  top: 0px;
+  right: 0;
+  left: 0;
+}
+
+.frame-border-bottom {
+  bottom: 0px;
+  right: 0;
+  left: 0;
+}
+
+.frame-border-right,
+.frame-border-left {
+  width: 20px;
+}
+
+.frame-border-right {
+  top: -50px;
+  right: 0;
+  bottom: -50px;
+}
+
+.frame-border-left {
+  top: -50px;
+  left: 0;
+  bottom: -50px;
 }

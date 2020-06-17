@@ -201,8 +201,8 @@ html {
   box-sizing: inherit;
 }
 body {
-  color: hsla(0, 0%, 0%, 0.8);
-  font-family: "Aldrich", Courier, monospace;
+  /* color: hsla(0, 0%, 0%, 0.8); */
+  font-family: "Times New Roman", Times, serif;
   font-weight: normal;
   word-wrap: break-word;
   font-kerning: normal;
@@ -665,4 +665,23 @@ pre tt:after {
   top: -50px;
   left: 0;
   bottom: -50px;
+}
+
+.outer {
+  width: 100vw;
+  height: 100vh;
+  background-color: #ccc;
+  padding: 1em;
+  /* border: 1px solid #777; */
+}
+
+.inner {
+  overflow: scroll;
+  background-color: white;
+  height: 100%;
+  border: 1px solid #777;
+}
+
+.dots {
+  text-align: center;
 }

@@ -10,7 +10,9 @@ const Header = ({ siteTitle }) => (
       display: "flex",
       justifyContent: "center",
       alignItems: "center",
-      border: "1px solid #777",
+      position: "sticky",
+      top: 0,
+      borderBottom: "1px solid #777",
     }}
   >
     <div

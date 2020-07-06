@@ -7,7 +7,7 @@ import headerStyles from './header.module.css'
 const Header = ({ siteTitle }) => (
   <header style={{
     background: 'var(--test-7)',
-    marginBottom: "1.45rem",
+    // marginBottom: "1.45rem",
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
@@ -15,7 +15,9 @@ const Header = ({ siteTitle }) => (
     top: 0,
     left: 0,
     right: 0,
-    zIndex: 1000
+    zIndex: 1000,
+    boxShadow: '0px 3px 10px var(--test-9)'
+    // boxShadow: 0px 3px 10px #F1F9DC;
   }}>
     <div
       style={{

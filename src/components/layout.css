@@ -643,11 +643,6 @@ pre tt:after {
   }
 }
 
-.container {
-  /* background-color: white; */
-  /* border: 1px solid #777; */
-}
-
-.dots {
-  text-align: center;
+.hero {
+  border: 1px solid red;
 }

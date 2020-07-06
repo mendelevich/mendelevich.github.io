@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `EVE MENDELEVICH`,
+    title: `eve mendelevich`,
     description: `Full-stack software engineer based in NYC.`,
     author: `Eve Mendelevich`,
   },
@@ -24,7 +24,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/icon02.png`, // This path is relative to the root of the site.
+        icon: `src/images/favicon.png`, // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

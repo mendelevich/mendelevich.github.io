@@ -25,7 +25,7 @@ const Layout = ({ children }) => {
 
   return (
     <div className="container">
-      <Header siteTitle={data.site.siteMetadata.title} />
+      <Header siteTitle={data.site.siteMetadata.title.toLowerCase()} />
       <div
         style={{
           margin: `0 auto`,
@@ -35,10 +35,6 @@ const Layout = ({ children }) => {
       >
         <main>{children}</main>
         <footer>© {new Date().getFullYear()} Eve Mendelevich</footer>
-        {/* <span class="frame-border frame-border-top"></span> */}
-        {/* <span class="frame-border frame-border-bottom"></span> */}
-        {/* <span class="frame-border frame-border-left"></span> */}
-        {/* <span className="frame-border frame-border-right"></span> */}
       </div>
     </div>
   )

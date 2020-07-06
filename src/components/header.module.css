@@ -1,0 +1,17 @@
+.header {
+  background: "#e2f3f6";
+  margin-bottom: "1.45rem";
+  display: "flex";
+  justify-content: "center";
+  align-items: "center";
+  position: "sticky";
+  top: 0;
+  border-bottom: "1px solid #777";
+}
+
+.headerText  {
+color: 'black';
+text-decoration: 'none';
+font-family: "Aldrich";
+/* -webkit-text-stroke: 0.5px #777; */
+}

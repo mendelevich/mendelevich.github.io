@@ -646,3 +646,10 @@ pre tt:after {
 .hero {
   border: 1px solid red;
 }
+
+.footer {
+  background-color: var(--test-8);
+  color: white;
+  text-align: center;
+  /* padding: 10px; */
+}

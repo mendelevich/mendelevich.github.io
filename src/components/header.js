@@ -2,8 +2,6 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 
-import headerStyles from './header.module.css'
-
 const Header = ({ siteTitle }) => (
   <header style={{
     background: 'var(--test-7)',

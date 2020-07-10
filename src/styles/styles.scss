@@ -1,7 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Aldrich&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Forum&display=swap");
+
+$clr-future-grey-dark: rgb(173, 182, 176);
+$clr-future-grey-light: rgb(179, 190, 182);
+$clr-future-green: rgb(223, 255, 165);
+$clr-future-orange: rgb(255, 211, 158);
+$white: #fff;
+
+$clr-dbm-blue: #e2f3f6;
+$clr-dbm-yellow: #fdf4e0;
+$clr-dbm-pink: rgb(251, 213, 221);
+$clr-dbm-grey: #212529;
+
+$font-aldrich: "Aldrich", "Courier New", Courier, monospace;
+$font-abril: "Abril Fatface", serif;
+$font-forum: "Forum", serif;
+
+// Main
+body {
+  background-color: $clr-dbm-blue;
+  color: $clr-dbm-grey;
+  font-family: $font-forum;
+}
+
+h1 {
+  font-family: $font-forum;
+}
+
+// Header
+.header {
+  background: $clr-dbm-yellow;
+  // marginBottom: "1.45rem";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  box-shadow: 0px 3px 10px $clr-dbm-pink;
+  // boxShadow: 0px 3px 10px #F1F9DC;
+  .header-container {
+    margin: 0 auto;
+    max-width: 960;
+    padding: 1rem 1rem;
+
+    h1 {
+      margin: 0;
+      text-shadow: -0.5vw 0.5vw $clr-dbm-blue;
+
+      a {
+        color: $clr-dbm-grey;
+        text-decoration: none;
+        font-family: $font-abril;
+      }
+    }
+  }
+}
+
+// Index
 .hero {
   height: 100vh;
   min-height: 600px;
-  background-color: var(--test-9);
+  background-color: $clr-dbm-pink;
   padding-top: 5rem;
   .hero-container {
     margin: 0 auto;
@@ -10,8 +73,9 @@
   }
 }
 
+// Footer
 .footer {
-  background-color: var(--test-8);
+  background-color: $clr-dbm-grey;
   color: white;
   text-align: center;
 }

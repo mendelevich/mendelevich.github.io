@@ -3,41 +3,13 @@ import PropTypes from "prop-types"
 import React from "react"
 
 const Header = ({ siteTitle }) => (
-  <header style={{
-    background: 'var(--test-7)',
-    // marginBottom: "1.45rem",
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-    position: "fixed",
-    top: 0,
-    left: 0,
-    right: 0,
-    zIndex: 1000,
-    boxShadow: '0px 3px 10px var(--test-9)'
-    // boxShadow: 0px 3px 10px #F1F9DC;
-  }}>
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1rem 1rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: 'var(--test-8)',
-            textDecoration: 'none',
-            fontFamily: "var(--test-font-2)",
-          }}
-        >
-          {siteTitle}
-        </Link>
+  <header className="header">
+    <div className="header-container">
+      <h1>
+        <Link to="/">{siteTitle}</Link>
       </h1>
     </div>
-  </header >
+  </header>
 )
 
 Header.propTypes = {

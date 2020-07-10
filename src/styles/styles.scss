@@ -13,14 +13,22 @@ $clr-dbm-yellow: #fdf4e0;
 $clr-dbm-pink: rgb(251, 213, 221);
 $clr-dbm-grey: #212529;
 
+$clr-light-yellow: #feedd2;
+$clr-light-blue: #e0f1fe;
+$clr-pistachio: #a9bb9d;
+$clr-copper: #c76f4a;
+$clr-mauve: #c36d8d;
+$clr-jet: #3a3532;
+
 $font-aldrich: "Aldrich", "Courier New", Courier, monospace;
 $font-abril: "Abril Fatface", serif;
 $font-forum: "Forum", serif;
 
 // Main
 body {
-  background-color: $clr-dbm-blue;
-  color: $clr-dbm-grey;
+  // background-color: $clr-dbm-blue;
+  // color: $clr-dbm-grey;
+  color: $clr-jet;
   font-family: $font-forum;
 }
 
@@ -30,7 +38,8 @@ h1 {
 
 // Header
 .header {
-  background: $clr-dbm-yellow;
+  // background: $clr-dbm-yellow;
+  background: $clr-pistachio;
   // marginBottom: "1.45rem";
   display: flex;
   justify-content: center;
@@ -40,7 +49,8 @@ h1 {
   left: 0;
   right: 0;
   z-index: 1000;
-  box-shadow: 0px 3px 10px $clr-dbm-pink;
+  // box-shadow: 0px 3px 10px $clr-dbm-pink;
+  // box-shadow: 0px 3px 10px $clr-copper;
   // boxShadow: 0px 3px 10px #F1F9DC;
   .header-container {
     margin: 0 auto;
@@ -49,10 +59,12 @@ h1 {
 
     h1 {
       margin: 0;
-      text-shadow: -0.5vw 0.5vw $clr-dbm-blue;
+      letter-spacing: 1.5px;
+      // text-shadow: -0.5vw 0.5vw $clr-dbm-blue;
 
       a {
-        color: $clr-dbm-grey;
+        // color: $clr-dbm-grey;
+        color: $clr-jet;
         text-decoration: none;
         font-family: $font-abril;
       }
@@ -61,21 +73,30 @@ h1 {
 }
 
 // Index
-.hero {
+.section {
   height: 100vh;
   min-height: 600px;
-  background-color: $clr-dbm-pink;
+}
+
+.section-container {
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 0 1.0875rem 1.45rem;
+}
+
+.hero {
+  background-color: $clr-light-yellow;
   padding-top: 5rem;
-  .hero-container {
-    margin: 0 auto;
-    max-width: 960px;
-    padding: 0 1.0875rem 1.45rem;
-  }
+}
+
+.projects {
+  // background-color: $clr-light-yellow;
 }
 
 // Footer
 .footer {
-  background-color: $clr-dbm-grey;
+  // background-color: $clr-dbm-grey;
+  background-color: $clr-jet;
   color: white;
   text-align: center;
 }

@@ -3,10 +3,12 @@ import { Link } from "gatsby"
 
 import Layout from "../components/Layout"
 import SEO from "../components/SEO"
-import Hero from "../components/Hero";
-import Projects from '../components/Projects'
+import Hero from "../components/Hero"
+import Projects from "../components/Projects"
 
-const projects = [];
+// import "../styles/styles.scss"
+
+const projects = []
 
 const IndexPage = () => (
   <Layout>

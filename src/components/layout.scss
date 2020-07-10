@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Aldrich&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Forum&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Forum&display=swap");
 
 :root {
   /* future tribe set */
@@ -13,11 +13,11 @@
   --test-6: #e2f3f6;
   --test-7: #fdf4e0;
   --test-8: #212529;
-  --test-9: rgb(251,213,221);
+  --test-9: rgb(251, 213, 221);
   /* test fonts */
-  --test-font-1: 'Aldrich', "Courier New", Courier, monospace;
-  --test-font-2: 'Abril Fatface', serif;
-  --test-font-3: 'Forum', serif;
+  --test-font-1: "Aldrich", "Courier New", Courier, monospace;
+  --test-font-2: "Abril Fatface", serif;
+  --test-font-3: "Forum", serif;
 }
 
 html {
@@ -641,11 +641,4 @@ pre tt:after {
   html {
     font-size: 100%;
   }
-}
-
-.footer {
-  background-color: var(--test-8);
-  color: white;
-  text-align: center;
-  /* padding: 10px; */
 }

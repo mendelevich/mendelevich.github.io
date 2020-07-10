@@ -21,7 +21,7 @@ const Hero = () => {
       }
       hands: file(relativePath: { eq: "hands.jpeg" }) {
         childImageSharp {
-          fluid {
+          fluid(quality: 100) {
             ...GatsbyImageSharpFluid
           }
         }
@@ -31,29 +31,20 @@ const Hero = () => {
 
   return (
     <div className="hero section">
-      <div className="section-container">
-        <div className="side left">
-          <h1>hi, I'm eve</h1>
-          <h3>i'm a software engineer based in nyc</h3>
-          <p>
-            experienced with full-stack and front-end development with
-            javascript
-          </p>
+      <div className="split left">
+        <h1>hi, i'm eve</h1>
+        <h3>software engineer based in nyc</h3>
+        <p>
+          full-stack: web development with javascript, express, react, and
+          postgres
+        </p>
+        <p>front-end: mobile & web development with react & react native</p>
+        <h3>check out my work below</h3>
+      </div>
+      <div className="split right">
+        <div className="hero-img">
+          <Img fluid={data.hands.childImageSharp.fluid} />
         </div>
-        <div className="side right">
-          {/* <div className="images">
-            <div className="top-right">
-              <Img fluid={data.flower.childImageSharp.fluid} />
-            </div>
-            <div className="bottom-left">
-              <Img fluid={data.cafe.childImageSharp.fluid} />
-            </div>
-          </div> */}
-          <div className="hero-img">
-            <Img fluid={data.hands.childImageSharp.fluid} />
-          </div>
-        </div>
-        {/* <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}> */}
       </div>
     </div>
   )

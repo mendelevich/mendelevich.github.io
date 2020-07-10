@@ -41,7 +41,8 @@ h3 {
 // Header
 .header {
   // background: $clr-dbm-yellow;
-  background: $clr-pistachio;
+  // background: $clr-pistachio;
+  background: #f6f5f4;
   // marginBottom: "1.45rem";
   display: flex;
   justify-content: center;
@@ -87,38 +88,24 @@ h3 {
 }
 
 .hero {
-  background-color: $clr-light-yellow;
-  padding-top: 6rem;
+  background-color: #edebe9;
+  display: flex;
+  .split {
+    width: 50%;
 
-  .section-container {
-    display: flex;
-    height: 100%;
-    max-width: 80vw;
-
-    .side {
-      width: 50%;
-      // border: 1px solid $clr-mauve;
-
+    &.left {
+      padding-top: 6rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    &.right {
       .hero-img {
         height: 100%;
-        width: 100%;
-      }
 
-      .images {
-        // background-color: $clr-mauve;
-        position: relative;
-        height: 100%;
-        .top-right {
-          position: absolute;
-          width: 320px;
-          top: 0;
-          right: 0;
-        }
-        .bottom-left {
-          position: absolute;
-          width: 320px;
-          bottom: 0;
-          left: 0;
+        .gatsby-image-wrapper {
+          height: 100%;
         }
       }
     }
@@ -126,12 +113,10 @@ h3 {
 }
 
 .projects {
-  // background-color: $clr-light-yellow;
 }
 
 // Footer
 .footer {
-  // background-color: $clr-dbm-grey;
   background-color: $clr-jet;
   color: white;
   text-align: center;

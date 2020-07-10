@@ -32,7 +32,9 @@ body {
   font-family: $font-forum;
 }
 
-h1 {
+h1,
+h2,
+h3 {
   font-family: $font-forum;
 }
 
@@ -86,7 +88,41 @@ h1 {
 
 .hero {
   background-color: $clr-light-yellow;
-  padding-top: 5rem;
+  padding-top: 6rem;
+
+  .section-container {
+    display: flex;
+    height: 100%;
+    max-width: 80vw;
+
+    .side {
+      width: 50%;
+      // border: 1px solid $clr-mauve;
+
+      .hero-img {
+        height: 100%;
+        width: 100%;
+      }
+
+      .images {
+        // background-color: $clr-mauve;
+        position: relative;
+        height: 100%;
+        .top-right {
+          position: absolute;
+          width: 320px;
+          top: 0;
+          right: 0;
+        }
+        .bottom-left {
+          position: absolute;
+          width: 320px;
+          bottom: 0;
+          left: 0;
+        }
+      }
+    }
+  }
 }
 
 .projects {

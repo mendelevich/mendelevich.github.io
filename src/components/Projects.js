@@ -5,9 +5,12 @@ const Projects = () => {
     <div className="projects section">
       <div className="section-container">
         <h1>Projects</h1>
-        {/* <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-        <Image />
-      </div> */}
+        <div className="projects-list">
+          <div className="project"></div>
+          <div className="project"></div>
+          <div className="project"></div>
+          <div className="project"></div>
+        </div>
       </div>
     </div>
   )

@@ -76,6 +76,7 @@ h3 {
 }
 
 // Index
+
 .section {
   height: 100vh;
   min-height: 600px;
@@ -84,7 +85,8 @@ h3 {
 .section-container {
   margin: 0 auto;
   max-width: 960px;
-  padding: 0 1.0875rem 1.45rem;
+  padding: 1.45rem 1.0875rem 1.45rem;
+  height: 100%;
 }
 
 .hero {
@@ -113,6 +115,33 @@ h3 {
 }
 
 .projects {
+  display: flex;
+  align-items: center;
+  .section-container {
+    width: 100%;
+    height: auto;
+    .projects-list {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      .project {
+        flex-grow: 1;
+        width: 40%;
+        height: 200px;
+        background-color: $clr-jet;
+        margin: 0 1rem 1rem 0;
+        transition: 0.3s;
+
+        &:nth-child(even) {
+          margin: 0 0 1rem 0;
+        }
+
+        &:hover {
+          opacity: 0.5;
+        }
+      }
+    }
+  }
 }
 
 // Footer
